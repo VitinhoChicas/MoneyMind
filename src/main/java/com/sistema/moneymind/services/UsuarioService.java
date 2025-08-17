@@ -7,6 +7,7 @@ import com.sistema.moneymind.repositories.UsuarioRepository;
 import com.sistema.moneymind.services.exceptions.DataIntegrityViolationException;
 import com.sistema.moneymind.services.exceptions.ObjectNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -19,6 +20,9 @@ public class UsuarioService {
 
     @Autowired
     private UsuarioRepository usRepo;
+
+    @Autowired
+    private PasswordEncoder encoder;
 
     public List<UsuarioDTO> findAll(){
         return usRepo.findAll().stream().map(obj -> new UsuarioDTO(obj)).collect(Collectors.toUnmodifiableList());
@@ -36,6 +40,7 @@ public class UsuarioService {
 
     public Usuario create (UsuarioDTO dto){
         dto.setIdUsuario(null);
+        dto.setSenhaUsuario(encoder.encode(dto.getSenhaUsuario()));
         validaUsuario(dto);
         Usuario obj = new Usuario(dto);
         return usRepo.save(obj);

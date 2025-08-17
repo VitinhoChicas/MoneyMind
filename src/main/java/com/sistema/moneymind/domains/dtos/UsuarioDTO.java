@@ -3,6 +3,7 @@ package com.sistema.moneymind.domains.dtos;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.sistema.moneymind.domains.Usuario;
+import jakarta.persistence.Column;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 
