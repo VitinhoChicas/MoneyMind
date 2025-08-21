@@ -1,15 +1,9 @@
 package com.sistema.moneymind.services;
 
 
-import com.sistema.moneymind.domains.Banco;
-import com.sistema.moneymind.domains.CentroCusto;
-import com.sistema.moneymind.domains.MetaFinanceira;
-import com.sistema.moneymind.domains.Usuario;
+import com.sistema.moneymind.domains.*;
 import com.sistema.moneymind.domains.enums.StatusMeta;
-import com.sistema.moneymind.repositories.BancoRepository;
-import com.sistema.moneymind.repositories.CentroCustoRepository;
-import com.sistema.moneymind.repositories.MetaFinanceiraRepository;
-import com.sistema.moneymind.repositories.UsuarioRepository;
+import com.sistema.moneymind.repositories.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -24,6 +18,9 @@ public class DBService {
 
     @Autowired
     private BancoRepository bancoRepo;
+
+    @Autowired
+    private PessoaRepository pessoaRepo;
 
     @Autowired
     private MetaFinanceiraRepository metaRepo;
@@ -60,6 +57,13 @@ public class DBService {
 
         centroRepo.save(centroCusto01);
         centroRepo.save(centroCusto02);
+
+
+        Pessoa pessoa01 = new Pessoa(null, "Razao01");
+        Pessoa pessoa02 = new Pessoa(null, "Razao02");
+
+        pessoaRepo.save(pessoa01);
+        pessoaRepo.save(pessoa02);
 
     }
 
