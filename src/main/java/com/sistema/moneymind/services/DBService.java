@@ -3,6 +3,7 @@ package com.sistema.moneymind.services;
 
 import com.sistema.moneymind.domains.*;
 import com.sistema.moneymind.domains.enums.StatusMeta;
+import com.sistema.moneymind.domains.enums.TipoConta;
 import com.sistema.moneymind.repositories.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -27,6 +28,9 @@ public class DBService {
 
     @Autowired
     private CentroCustoRepository centroRepo;
+
+    @Autowired
+    private ContaRepository contaRepo;
 
     @Autowired
     private PasswordEncoder encoder;
@@ -64,6 +68,13 @@ public class DBService {
 
         pessoaRepo.save(pessoa01);
         pessoaRepo.save(pessoa02);
+
+
+        Conta conta01 = new Conta(null, "Conta01", TipoConta.CONTACORRENTE, "Agencia01", "Numero : 1", 1000.0, 10000.0, usuario1, banco01, metaFinanceira01 );
+        Conta conta02 = new Conta(null, "Conta02", TipoConta.CONTACORRENTE, "Agencia02", "Numero : 2", 5000.0, 50000.0, usuario2, banco02, metaFinanceira02 );
+
+        contaRepo.save(conta01);
+        contaRepo.save(conta02);
 
     }
 

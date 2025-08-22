@@ -1,6 +1,7 @@
 package com.sistema.moneymind.services;
 
 
+import com.sistema.moneymind.domains.Banco;
 import com.sistema.moneymind.domains.Usuario;
 import com.sistema.moneymind.domains.dtos.UsuarioDTO;
 import com.sistema.moneymind.repositories.UsuarioRepository;
@@ -63,6 +64,9 @@ public class UsuarioService {
 
     public void delete(Long id){
         Usuario obj = findbyId(id);
+        if(obj.getContas().size()>0){
+            throw new DataIntegrityViolationException("Usuário não pode ser excluido pois tem uma conta vinculado com ele");
+        }
         usRepo.deleteById(id);
     }
 

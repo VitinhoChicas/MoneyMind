@@ -1,12 +1,15 @@
 package com.sistema.moneymind.domains;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.sistema.moneymind.domains.dtos.MetaFinanceiraDTO;
 import com.sistema.moneymind.domains.enums.StatusMeta;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 @Entity
@@ -29,6 +32,10 @@ public class MetaFinanceira {
     @Enumerated(EnumType.ORDINAL)
     @JoinColumn(name = "metafinanceira")
     private StatusMeta statusMeta;
+
+    @JsonIgnore
+    @OneToMany(mappedBy = "metaFinanceira")
+    private List<Conta> contas = new ArrayList<>();
 
     public MetaFinanceira() {
 
@@ -90,6 +97,14 @@ public class MetaFinanceira {
 
     public void setStatusMeta(StatusMeta statusMeta) {
         this.statusMeta = statusMeta;
+    }
+
+    public List<Conta> getContas() {
+        return contas;
+    }
+
+    public void setContas(List<Conta> contas) {
+        this.contas = contas;
     }
 
     @Override

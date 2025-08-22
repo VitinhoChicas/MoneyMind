@@ -3,6 +3,7 @@ package com.sistema.moneymind.services;
 
 import com.sistema.moneymind.domains.Banco;
 import com.sistema.moneymind.domains.MetaFinanceira;
+import com.sistema.moneymind.domains.Usuario;
 import com.sistema.moneymind.domains.dtos.BancoDTO;
 import com.sistema.moneymind.domains.dtos.MetaFinanceiraDTO;
 import com.sistema.moneymind.repositories.MetaFinanceiraRepository;
@@ -52,6 +53,9 @@ public class MetaFinanceiraService {
 
     public void delete(Long id){
         MetaFinanceira obj = findbyId(id);
+        if(obj.getContas().size()>0){
+            throw new DataIntegrityViolationException("Meta financeira não pode ser excluido pois tem uma conta vinculado com ele");
+        }
         metaRepo.deleteById(id);
     }
 

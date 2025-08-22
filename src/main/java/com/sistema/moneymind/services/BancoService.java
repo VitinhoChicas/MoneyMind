@@ -9,6 +9,7 @@ import com.sistema.moneymind.repositories.BancoRepository;
 import com.sistema.moneymind.resources.BancoResource;
 import com.sistema.moneymind.services.exceptions.DataIntegrityViolationException;
 import com.sistema.moneymind.services.exceptions.ObjectNotFoundException;
+import org.apache.catalina.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -65,6 +66,9 @@ public class BancoService {
 
     public void delete(Long id){
         Banco obj = findbyId(id);
+        if(obj.getContas().size()>0){
+            throw new DataIntegrityViolationException("Banco não pode ser excluido pois tem uma conta vinculado com ele");
+        }
         bancoRepo.deleteById(id);
     }
 

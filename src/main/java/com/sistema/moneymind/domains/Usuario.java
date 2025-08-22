@@ -2,12 +2,15 @@ package com.sistema.moneymind.domains;
 
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.sistema.moneymind.domains.dtos.UsuarioDTO;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 @Entity
@@ -30,6 +33,10 @@ public class Usuario {
 
     @JsonFormat(pattern = "dd/MM/yyyy")
     protected LocalDate dataNascimento;
+
+    @JsonIgnore
+    @OneToMany(mappedBy = "usuario")
+    private List<Conta> contas = new ArrayList<>();
 
 
     public Usuario() {
@@ -90,6 +97,14 @@ public class Usuario {
 
     public void setDataNascimento(LocalDate dataNascimento) {
         this.dataNascimento = dataNascimento;
+    }
+
+    public List<Conta> getContas() {
+        return contas;
+    }
+
+    public void setContas(List<Conta> contas) {
+        this.contas = contas;
     }
 
     @Override
