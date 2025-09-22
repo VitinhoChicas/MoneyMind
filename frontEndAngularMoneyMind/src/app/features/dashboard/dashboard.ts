@@ -38,10 +38,16 @@ export class Dashboard implements OnInit, OnDestroy {
     private router: Router
   ) {}
   onShowUser() {
-    this.showUser = true;
+    this.showUser = !this.showUser; // <-- Esta linha inverte o valor de showUser
     this.editMode = false;
-    this.editError = '';
-    this.loadUser();
+    this.editError = "";
+    // A função loadUser() deve ser chamada apenas se você for mostrar os dados
+    // ou se precisar recarregar os dados a cada vez que o painel for aberto.
+    // Se os dados já estiverem carregados e você só quer alternar a visibilidade,
+    // pode ser melhor chamar loadUser() apenas quando showUser for true.
+    if (this.showUser) {
+      this.loadUser();
+    }
   }
 
   onEditUser() {

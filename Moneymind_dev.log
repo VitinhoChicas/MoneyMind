@@ -1,0 +1,543 @@
+2025-09-21T01:17:25.340-03:00 DEBUG 2768 --- [moneymind] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario,
+        u1_0.senha_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.email_usuario=?
+2025-09-21T01:17:25.462-03:00 DEBUG 2768 --- [moneymind] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario,
+        u1_0.senha_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.email_usuario=?
+2025-09-21T08:28:13.399-03:00  WARN 2768 --- [moneymind] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7h10m52s803ms918µs700ns).
+2025-09-21T12:30:07.647-03:00  WARN 2768 --- [moneymind] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h54m24s125ms597µs900ns).
+2025-09-21T18:23:33.404-03:00  WARN 2768 --- [moneymind] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5h52m55s748ms686µs800ns).
+2025-09-21T19:02:42.499-03:00  WARN 2768 --- [moneymind] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=38m39s87ms339µs100ns).
+2025-09-21T19:28:59.673-03:00  WARN 2768 --- [moneymind] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=19m47s54ms660µs800ns).
+2025-09-21T20:08:34.684-03:00  WARN 2768 --- [moneymind] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=39m35s10ms627µs700ns).
+2025-09-21T22:24:14.251-03:00  WARN 2768 --- [moneymind] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h14m8s553ms974µs201ns).
+2025-09-21T22:40:15.388-03:00  WARN 2768 --- [moneymind] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m1s136ms775µs500ns).
+2025-09-21T22:40:43.501-03:00 DEBUG 2768 --- [moneymind] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario,
+        u1_0.senha_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.email_usuario=?
+2025-09-21T22:40:43.514-03:00 DEBUG 2768 --- [moneymind] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario,
+        u1_0.senha_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.email_usuario=?
+2025-09-21T22:41:50.221-03:00 DEBUG 2768 --- [moneymind] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario,
+        u1_0.senha_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.email_usuario=?
+2025-09-21T22:41:50.227-03:00 DEBUG 2768 --- [moneymind] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario,
+        u1_0.senha_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.email_usuario=?
+2025-09-21T22:41:52.572-03:00 DEBUG 2768 --- [moneymind] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario,
+        u1_0.senha_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.email_usuario=?
+2025-09-21T22:41:52.577-03:00 DEBUG 2768 --- [moneymind] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario,
+        u1_0.senha_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.email_usuario=?
+2025-09-21T22:41:53.084-03:00 DEBUG 2768 --- [moneymind] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario,
+        u1_0.senha_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.email_usuario=?
+2025-09-21T22:41:53.090-03:00 DEBUG 2768 --- [moneymind] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario,
+        u1_0.senha_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.email_usuario=?
+2025-09-21T22:41:59.249-03:00 DEBUG 2768 --- [moneymind] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario,
+        u1_0.senha_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.email_usuario=?
+2025-09-21T22:41:59.252-03:00 DEBUG 2768 --- [moneymind] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario,
+        u1_0.senha_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.email_usuario=?
+2025-09-21T22:46:20.631-03:00 DEBUG 2768 --- [moneymind] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario,
+        u1_0.senha_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.email_usuario=?
+2025-09-21T22:46:20.636-03:00 DEBUG 2768 --- [moneymind] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario,
+        u1_0.senha_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.email_usuario=?
+2025-09-21T22:51:41.342-03:00 DEBUG 2768 --- [moneymind] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario,
+        u1_0.senha_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.email_usuario=?
+2025-09-21T22:51:41.346-03:00 DEBUG 2768 --- [moneymind] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario,
+        u1_0.senha_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.email_usuario=?
+2025-09-21T23:02:45.297-03:00 DEBUG 2768 --- [moneymind] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario,
+        u1_0.senha_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.email_usuario=?
+2025-09-21T23:02:45.303-03:00 DEBUG 2768 --- [moneymind] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario,
+        u1_0.senha_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.email_usuario=?
+2025-09-21T23:04:01.911-03:00 DEBUG 2768 --- [moneymind] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario,
+        u1_0.senha_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.email_usuario=?
+2025-09-21T23:04:01.917-03:00 DEBUG 2768 --- [moneymind] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario,
+        u1_0.senha_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.email_usuario=?
+2025-09-21T23:04:09.869-03:00 DEBUG 2768 --- [moneymind] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario,
+        u1_0.senha_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.email_usuario=?
+2025-09-21T23:04:09.874-03:00 DEBUG 2768 --- [moneymind] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario,
+        u1_0.senha_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.email_usuario=?
+2025-09-21T23:06:46.146-03:00 DEBUG 2768 --- [moneymind] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario,
+        u1_0.senha_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.email_usuario=?
+2025-09-21T23:06:46.155-03:00 DEBUG 2768 --- [moneymind] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario,
+        u1_0.senha_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.email_usuario=?
+2025-09-21T23:06:50.099-03:00 DEBUG 2768 --- [moneymind] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario,
+        u1_0.senha_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.email_usuario=?
+2025-09-21T23:06:50.103-03:00 DEBUG 2768 --- [moneymind] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario,
+        u1_0.senha_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.email_usuario=?
+2025-09-21T23:10:16.460-03:00 DEBUG 2768 --- [moneymind] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario,
+        u1_0.senha_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.email_usuario=?
+2025-09-21T23:10:16.470-03:00 DEBUG 2768 --- [moneymind] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario,
+        u1_0.senha_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.email_usuario=?
+2025-09-21T23:10:33.996-03:00 DEBUG 2768 --- [moneymind] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario,
+        u1_0.senha_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.email_usuario=?
+2025-09-21T23:10:34.004-03:00 DEBUG 2768 --- [moneymind] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario,
+        u1_0.senha_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.email_usuario=?
+2025-09-21T23:10:39.859-03:00 DEBUG 2768 --- [moneymind] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario,
+        u1_0.senha_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.email_usuario=?
+2025-09-21T23:10:39.865-03:00 DEBUG 2768 --- [moneymind] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario,
+        u1_0.senha_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.email_usuario=?
+2025-09-21T23:10:54.027-03:00 DEBUG 2768 --- [moneymind] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario,
+        u1_0.senha_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.email_usuario=?
+2025-09-21T23:10:54.039-03:00 DEBUG 2768 --- [moneymind] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario,
+        u1_0.senha_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.email_usuario=?
+2025-09-21T23:14:58.392-03:00 DEBUG 2768 --- [moneymind] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario,
+        u1_0.senha_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.email_usuario=?
+2025-09-21T23:14:58.404-03:00 DEBUG 2768 --- [moneymind] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario,
+        u1_0.senha_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.email_usuario=?
+2025-09-21T23:15:20.848-03:00 DEBUG 2768 --- [moneymind] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario,
+        u1_0.senha_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.email_usuario=?
+2025-09-21T23:15:20.854-03:00 DEBUG 2768 --- [moneymind] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario,
+        u1_0.senha_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.email_usuario=?
+2025-09-21T23:15:26.181-03:00 DEBUG 2768 --- [moneymind] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario,
+        u1_0.senha_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.email_usuario=?
+2025-09-21T23:15:26.190-03:00 DEBUG 2768 --- [moneymind] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario,
+        u1_0.senha_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.email_usuario=?
+2025-09-21T23:15:28.220-03:00 DEBUG 2768 --- [moneymind] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario,
+        u1_0.senha_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.email_usuario=?
+2025-09-21T23:15:28.225-03:00 DEBUG 2768 --- [moneymind] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario,
+        u1_0.senha_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.email_usuario=?
+2025-09-21T23:15:30.957-03:00 DEBUG 2768 --- [moneymind] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario,
+        u1_0.senha_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.email_usuario=?
+2025-09-21T23:15:30.965-03:00 DEBUG 2768 --- [moneymind] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario,
+        u1_0.senha_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.email_usuario=?
+2025-09-21T23:15:30.978-03:00 DEBUG 2768 --- [moneymind] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario,
+        u1_0.senha_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.email_usuario=?
+2025-09-21T23:15:30.981-03:00 DEBUG 2768 --- [moneymind] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario,
+        u1_0.senha_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.email_usuario=?
+2025-09-21T23:17:15.962-03:00 DEBUG 2768 --- [moneymind] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario,
+        u1_0.senha_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.email_usuario=?
+2025-09-21T23:17:15.969-03:00 DEBUG 2768 --- [moneymind] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        u1_0.id_usuario,
+        u1_0.data_nascimento,
+        u1_0.email_usuario,
+        u1_0.nome_usuario,
+        u1_0.senha_usuario 
+    from
+        usuario u1_0 
+    where
+        u1_0.email_usuario=?
+2025-09-21T23:21:32.317-03:00  INFO 2768 --- [moneymind] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-21T23:21:32.433-03:00  INFO 2768 --- [moneymind] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-21T23:21:32.471-03:00  INFO 2768 --- [moneymind] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-21T23:21:32.485-03:00 TRACE 2768 --- [moneymind] [SpringApplicationShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@31042c58] for TypeConfiguration
+2025-09-21T23:21:32.485-03:00 DEBUG 2768 --- [moneymind] [SpringApplicationShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@40f849e] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@31042c58]
+2025-09-21T23:21:32.514-03:00  INFO 2768 --- [moneymind] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-21T23:21:32.526-03:00  INFO 2768 --- [moneymind] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

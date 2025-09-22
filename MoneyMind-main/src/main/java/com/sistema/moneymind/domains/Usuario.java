@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.sistema.moneymind.domains.dtos.UsuarioDTO;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 
@@ -24,6 +25,7 @@ public class Usuario {
     @NotBlank @NotNull
     private String nomeUsuario;
 
+    @Email(message = "O campo e-mail deve ser um endereço de e-mail válido")
     @NotNull @NotBlank
     @Column(unique = true)
     private String emailUsuario;

@@ -4,6 +4,7 @@ package com.sistema.moneymind.domains.dtos;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.sistema.moneymind.domains.Usuario;
 import jakarta.persistence.Column;
+import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 
@@ -18,6 +19,7 @@ public class UsuarioDTO {
     @NotNull(message = "O campo nome não pode ser nulo")
     private String nomeUsuario;
 
+    @Email(message = "O campo e-mail deve ser um endereço de e-mail válido")
     @NotBlank(message = "O campo e-mail não pode ser vazio")
     @NotNull(message = "O campo e-mail não pode ser nulo")
     private String emailUsuario;
@@ -56,11 +58,11 @@ public class UsuarioDTO {
         this.nomeUsuario = nomeUsuario;
     }
 
-    public @NotBlank(message = "O campo e-mail não pode ser vazio") @NotNull(message = "O campo e-mail não pode ser nulo") String getEmailUsuario() {
+    public @Email(message = "O campo e-mail deve ser um endereço de e-mail válido") @NotBlank(message = "O campo e-mail não pode ser vazio") @NotNull(message = "O campo e-mail não pode ser nulo") String getEmailUsuario() {
         return emailUsuario;
     }
 
-    public void setEmailUsuario(@NotBlank(message = "O campo e-mail não pode ser vazio") @NotNull(message = "O campo e-mail não pode ser nulo") String emailUsuario) {
+    public void setEmailUsuario(@Email(message = "O campo e-mail deve ser um endereço de e-mail válido") @NotBlank(message = "O campo e-mail não pode ser vazio") @NotNull(message = "O campo e-mail não pode ser nulo") String emailUsuario) {
         this.emailUsuario = emailUsuario;
     }
 

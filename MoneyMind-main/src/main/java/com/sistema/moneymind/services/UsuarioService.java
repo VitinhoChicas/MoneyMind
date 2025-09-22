@@ -54,13 +54,23 @@ public class UsuarioService {
         }
     }
 
-    public Usuario update(Long id,  UsuarioDTO objDto){
+    public Usuario update(Long id, UsuarioDTO objDto){
         objDto.setIdUsuario(id);
         Usuario oldObj = findbyId(id);
-        oldObj = new Usuario(objDto);
+
+        // só encoda se senha foi enviada
+        if (objDto.getSenhaUsuario() != null && !objDto.getSenhaUsuario().isBlank()) {
+            objDto.setSenhaUsuario(encoder.encode(objDto.getSenhaUsuario()));
+        } else {
+            // mantém a senha antiga se não foi informada
+            objDto.setSenhaUsuario(oldObj.getSenhaUsuario());
+        }
+
         validaUsuario(objDto);
-        return usRepo.save(oldObj);
+        Usuario newObj = new Usuario(objDto);
+        return usRepo.save(newObj);
     }
+
 
     public void delete(Long id){
         Usuario obj = findbyId(id);
